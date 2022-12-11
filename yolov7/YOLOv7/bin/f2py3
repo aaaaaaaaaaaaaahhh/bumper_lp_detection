@@ -1,4 +1,4 @@
-#!/home/stickymangoes/Downloads/yolov7/YOLOv7/bin/python3.10
+#!/home/stickymangoes/Programming/bumper_lp_detection/yolov7/yolov7/bin/python3.10
 # -*- coding: utf-8 -*-
 import re
 import sys
