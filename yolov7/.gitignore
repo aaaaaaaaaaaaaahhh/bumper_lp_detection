@@ -20,6 +20,7 @@
 *.cfg
 !setup.cfg
 !cfg/yolov3*.cfg
+YOLOv7/*
 
 storage.googleapis.com
 runs/*
