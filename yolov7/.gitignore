@@ -52,6 +52,7 @@ val2017.zip
 *.torchscript
 *.tflite
 *.h5
+yolov7/traced_model.pt
 *_saved_model/
 *_web_model/
 *_openvino_model/
