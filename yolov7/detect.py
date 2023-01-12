@@ -132,8 +132,7 @@ def detect(source, weights, imgsz, conf_thres, classes, device, name='exp', save
                         y1 = int(xyxy[1].item())
                         x2 = int(xyxy[2].item())
                         y2 = int(xyxy[3].item())
-                        cropped_image
-                        print('bounding box is ', x1, y1, x2, y2)
+                        cropped_image = im0[y1:y2, x1:x2]
 
             # Print time (inference + NMS)
             print(f'{s}Done. ({(1E3 * (t2 - t1)):.1f}ms) Inference, ({(1E3 * (t3 - t2)):.1f}ms) NMS')
@@ -168,6 +167,7 @@ def detect(source, weights, imgsz, conf_thres, classes, device, name='exp', save
         #print(f"Results saved to {save_dir}{s}")
 
     print(f'Done. ({time.time() - t0:.3f}s)')
+    return x1, x2, y1, y2
 
 '''
 if __name__ == '__main__':
